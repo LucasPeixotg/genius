@@ -37,6 +37,7 @@ const playGame = () => {
     playerTurn = false
     order = []
     clickedOrder = []
+    score = 0
     nextLevel()
 }
 
