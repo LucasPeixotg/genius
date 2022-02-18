@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-color: #050505;
+    background-color: #070707;
 }
 
 #game-section {
@@ -16,14 +16,14 @@ body {
 }
 
 #genius {
-    background-color: #111;
+    background-color: #0b0b0b;
     border-radius: 100%;
     width: 70vh;
     height: 70vh;
     display: grid;
     grid-template: 'green-area red-area' 'yellow-area blue-area';
     grid-gap: 20px;
-    border: solid 20px #111;
+    border: solid 20px #0b0b0b;
     box-shadow: #000 0 0 20px 10px;
 }
 
@@ -65,23 +65,22 @@ body {
 }
 
 #middle-genius {
-    box-shadow: #0005 0 0 1px 5px inset;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 30vh;
     height: 30vh;
+    overflow: hidden;
     border-radius: 100%;
     border: solid 20px #111;
-    cursor: pointer;
-    background-color: #aaa;
     font-size: 2em;
-    color: #000;
     font-weight: bold;
     font-family: Arial;
-    background-color: #080808;
-    overflow: hidden;
+    color: #000;
+    background-color: #050505;
+    box-shadow: #0005 0 0 1px 5px inset;
+    cursor: pointer;
 }
 
 #middle-genius h1 {
@@ -94,9 +93,9 @@ body {
 
 #start-button {
     padding: 10px;
-    background-color: #555;
+    background-color: #444;
     border: none;
-    border-top: solid 5px #888;
+    border-top: solid 5px #666;
     width: 100%;
     height: 60%;
     position: absolute;
@@ -109,7 +108,7 @@ body {
 }
 
 #start-button:hover {
-    background-color: #888;
+    background-color: #666;
 }
 
 
@@ -121,9 +120,42 @@ body {
         border-radius: 0;
         grid-gap: 0;
     }
-
+    
+    #middle-genius {
+        border: solid 10px #111;
+        width: 25vh;
+        height: 25vh;
+        font-size: 1.5em;
+    }
+    
+    #middle-genius h1 {
+        display: none;
+    }
+    
+    #start-button {
+        height: 100%;
+        width: 100%;
+        border-top: none;
+        padding-bottom: 0;
+    }
+    
     .color-button {
-        border-radius: 0 !important;
         box-shadow: none;
+    }
+
+    #green {
+        border-top-left-radius: 10px;
+    }
+    
+    #blue {
+        border-bottom-right-radius: 10px;
+    }
+    
+    #yellow {
+        border-bottom-left-radius: 10px;
+    }
+    
+    #red {
+        border-top-right-radius: 10px;
     }
 } 
